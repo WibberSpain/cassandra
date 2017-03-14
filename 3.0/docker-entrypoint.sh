@@ -43,6 +43,9 @@ if [ "$1" = 'cassandra' ]; then
 		num_tokens \
 		rpc_address \
 		start_rpc \
+		concurrent_reads \
+		concurrent_writes \
+		concurrent_counter_writes \
 	; do
 		var="CASSANDRA_${yaml^^}"
 		val="${!var}"
